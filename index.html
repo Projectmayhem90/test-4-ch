@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test 4 Challenge</title>
+    <title>Quiz</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <div class="scores"><a href="highscores.html"> see Highscores</a></div>
-    <div class="timer">Time: <span id="time">0</span></div>
-    
+    <div id="viewHigh">View High Scores</div>
+
+    <div id="startScreen">
+        <section class="startScreen">
+            <h1 id="enterytitle"> Are you prepaired? <span> Coding Quiz</span></h1>
+            <p id="welcomedesc">
+                This is a short quiz with 10 question on Jacscript. This question need to be answered within 100
+                secounds.
+                Time is the currency here and each question answered incorrectly you will lose 5 secounds. when the quiz
+                is over
+                your right answers will be multiplied by remaining questions to equal your score.
+            </p>
+            <button id="startbutton">"Start Quiz"</button>
+        </section>
+    </div>
+
+    <div id="questionscreen" class="hidden">
+        <section class="questionscreen">
+            <div id="timer"> Time that Remains: <span id="timeRemaining">0</span> seconds</div>
+            <h2 id=questions></h2>
+            <div id="options"></div>
+        </section>
+    </div>
+
+    <div id="scoreScreen" class="hidden">
+        <section class="scoreScreen">
+            <h2>Quiz Done</h2>
+            <h2>Score: <span id="score"></span></h2>
+            <a>Score Save <br><br> Input your name: <br></a>
+            <input type="text" id="'userName" max="20"/>
+            <button id="saveScore"> Save your Score</button>
+        </section>
+    </div>
+
+    <div id="highScoreScreen" class="hidden">
+        <section class="highScoreScreen">
+
+        </section>
+    </div>
+
+    <script src="./assets/js/Build-work.js"></script>
 </body>
+
 </html>
