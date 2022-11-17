@@ -7,27 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 
 <body>
-    <div id="viewHigh">View High Scores</div>
 
     <div id="startScreen">
         <section class="startScreen">
             <h1 id="enterytitle"> Are you prepaired? <span> Coding Quiz</span></h1>
-            <p id="welcomedesc">
-                This is a short quiz with 10 question on Jacscript. This question need to be answered within 100
+            <p id="welcome">
+                This is a short quiz with 5 question on Jacscript. This question need to be answered within 100
                 secounds.
-                Time is the currency here and each question answered incorrectly you will lose 5 secounds. when the quiz
-                is over
-                your right answers will be multiplied by remaining questions to equal your score.
             </p>
             <button id="startbutton">"Start Quiz"</button>
         </section>
     </div>
 
-    <div id="questionscreen" class="hidden">
+    <div id="questionScreen" class="hidden">
         <section class="questionscreen">
             <div id="timer"> Time that Remains: <span id="timeRemaining">0</span> seconds</div>
             <h2 id=questions></h2>
@@ -35,7 +31,7 @@
         </section>
     </div>
 
-    <div id="scoreScreen" class="hidden">
+    <div id="scoreScreen" class="hide">
         <section class="scoreScreen">
             <h2>Quiz Done</h2>
             <h2>Score: <span id="score"></span></h2>
@@ -44,10 +40,6 @@
             <button id="saveScore"> Save your Score</button>
         </section>
     </div>
-
-    <div id="highScoreScreen" class="hidden">
-        <section class="highScoreScreen">
-
         </section>
     </div>
 
