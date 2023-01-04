@@ -7,7 +7,7 @@ Repo for 4th OSU bootcamp challenge
 
 # Questions Page / Coding Quiz
 
-![Webpage ](./assets/Images/Test%20Pic%202.png
+![Webpage ](./assets/Images/Test%20Pic%202.png)
 
 ## Description 
 
