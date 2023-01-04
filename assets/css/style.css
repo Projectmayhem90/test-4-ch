@@ -1,0 +1,83 @@
+* {
+    font-size: 105%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    display: block;
+    margin: 10px 0 0 0;
+    background-color: rgb(207, 239, 250);
+    border-radius: 8px;
+}
+
+span {
+    color: red;
+}
+
+li:nth-child(odd) {
+    background-color: rgb(207, 239, 250);
+}
+
+.hidden {
+    display: none;
+}
+
+.welcomeScreen,
+.scoreScreen,
+.highScoreScreen {
+    display: block;
+    margin: 5rem auto 0 auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.questionScreen {
+    display: block;
+    margin: 8rem auto 0 auto;
+    max-width: 800px;
+}
+
+.incorrect {
+    color: red;
+}
+
+.correct {
+    color: rgb(0, 233, 0);
+}
+
+.highScoreScreen h2 {
+    font-size: 150%;
+}
+
+#viewHigh {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+#returnHome {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+#timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#startButton,
+#saveScore,
+#clearScores {
+    margin: 1rem auto 0 auto;
+}
+
+#response {
+    margin: 1rem 0 0 0;
+}
+
+#scoreOl {
+    list-style: decimal inside;
+    text-align: left;
+}

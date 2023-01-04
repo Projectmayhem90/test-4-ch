@@ -5,45 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Coding Quiz</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
 </head>
 
 <body>
+    <button id="viewHighScore">View High Scores</button>
+    <button id="returnHome" class="hidden">Start Over</button>
 
     <div id="startScreen">
-        <section class="startScreen">
-            <h1 id="enterytitle"> Are you prepaired? <span> Coding Quiz</span></h1>
-            <p id="welcome">
+        <section class="WelcomeScreen">
+            <h1 id="Welcometitle"> <span> Coding Quiz</span></h1>
+            <p id="welcomeDesc">
                 This is a short quiz with 5 question on Jacscript. This question need to be answered within 100
-                secounds.
+                secounds. Each wrong selections is minus 15 seconds
             </p>
-            <button id="startbutton">"Start Quiz"</button>
+            <button id="startButton">"Start Quiz"</button>
         </section>
     </div>
 
     <div id="questionScreen" class="hidden">
-        <section class="questionscreen">
+        <section class="questionScreen">
             <div id="timer"> Time that Remains: <span id="timeRemaining">0</span> seconds</div>
             <h2 id=questions></h2>
             <div id="options"></div>
+            <div id="response" class="hidden"></div>
         </section>
     </div>
 
-    <div id="scoreScreen" class="hide">
+    <div id="scoreScreen" class="hidden">
         <section class="scoreScreen">
             <h2>Quiz Done</h2>
             <h2>Score: <span id="score"></span></h2>
             <a>Score Save <br><br> Input your name: <br></a>
-            <input type="text" id="'userName" max="20"/>
+            <input type="text" id="'userName" max="20" />
             <button id="saveScore"> Save your Score</button>
         </section>
     </div>
+
+    <div id="highScoreScreen" class="hidden">
+        <section class="highScoreScreen">
+            <h2>Leaderboard</h2>
+            <ol id="score01"></ol>
+            <button id="clearScores">Clear Leaderboard</button>
         </section>
     </div>
 
-    <script src="./assets/js/Build-work.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
